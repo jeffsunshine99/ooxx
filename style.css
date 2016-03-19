@@ -1,0 +1,75 @@
+body {
+                background-color: #d2d7d3;
+            }
+            .board, .msg {
+                margin: 0 auto;
+                margin-top: 60px;
+                width: 80%;
+                max-width: 800px;    
+            }
+            .board {
+                position: relative;
+                background-color: #fde3a7;
+            }
+            @media (max-width: 600px) {
+                .board {
+                    width: 90%;
+                }
+            }
+            .cell {
+                width: 30%;
+                height: 20px;
+                margin: 1.6%;
+                float: left;
+                background-color: #4ecdc4;
+                cursor: pointer;
+                text-align: center;
+            }
+            .cell:hover {
+                box-shadow: 2px 2px 0 #1ba39c;
+            }
+            .cell.win {
+                color: red;
+            }
+
+            .player {
+                width: 50%;
+                height: 80px;
+                float: left;
+                text-align: center;
+            }
+            .arrow, .mark {
+                width: 50%;
+            }
+            .player1 > div {
+                float: right;
+            }
+            .player2 > div {
+                float: left;
+            }
+            .arrow {
+                width: 0; 
+                height: 0; 
+                border-top: 40px solid transparent;
+                border-bottom: 40px solid transparent;
+            }
+            .arrow.inv {
+                visibility: hidden;
+            }
+            .arrow-r {
+                border-left: 40px solid #4ecdc4;
+            }
+            .arrow-l {
+                border-right: 40px solid #4ecdc4;    
+            }
+            .mark {
+                font-size: 80px;
+                line-height: 80px;
+            }
+            .ss {
+                clear: both;
+                font-size: 36px;
+                text-align: center;
+                font-family: sans-serif;
+                padding: 32px 0;
+            }
